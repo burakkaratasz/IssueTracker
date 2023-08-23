@@ -10,6 +10,6 @@ namespace IssueTracker.Data
             
         }
 
-        public DbSet<Issue> Issues { get; set; }
+        public DbSet<Issue> Issues { get; set; } //database kaydı
     }
 }

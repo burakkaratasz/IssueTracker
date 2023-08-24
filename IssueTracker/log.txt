@@ -1,0 +1,389 @@
+2023-08-24 10:07:33.573 +03:00 [INF] User profile is available. Using 'C:\Users\burak\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-08-24 10:07:33.742 +03:00 [INF] Now listening on: http://localhost:5241
+2023-08-24 10:07:33.745 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-24 10:07:33.745 +03:00 [INF] Hosting environment: Development
+2023-08-24 10:07:33.745 +03:00 [INF] Content root path: \\Mac\Home\Desktop\C#\IssueTracker\IssueTracker\
+2023-08-24 10:07:35.171 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5241/ - -
+2023-08-24 10:07:35.327 +03:00 [INF] Executing endpoint '/Index'
+2023-08-24 10:07:35.431 +03:00 [INF] Route matched with {page = "/Index"}. Executing page /Index
+2023-08-24 10:07:35.640 +03:00 [INF] Executing handler method IssueTracker.Pages.IndexModel.OnGet - ModelState is "Valid"
+2023-08-24 10:07:36.099 +03:00 [INF] Entity Framework Core 6.0.1 initialized 'IssueDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.1' with options: None
+2023-08-24 10:07:36.574 +03:00 [INF] Executed DbCommand (17ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "i"."Id", "i"."Completed", "i"."Created", "i"."Description", "i"."IssueType", "i"."Priority", "i"."Title"
+FROM "Issues" AS "i"
+WHERE "i"."Completed" IS NULL
+ORDER BY "i"."Created" DESC
+2023-08-24 10:07:36.660 +03:00 [INF] Executed handler method OnGet, returned result .
+2023-08-24 10:07:36.663 +03:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2023-08-24 10:07:36.663 +03:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2023-08-24 10:07:36.938 +03:00 [INF] Executed page /Index in 1502.4703ms
+2023-08-24 10:07:36.939 +03:00 [INF] Executed endpoint '/Index'
+2023-08-24 10:07:36.970 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5241/ - - - 200 - text/html;+charset=utf-8 1803.9653ms
+2023-08-24 10:07:37.005 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5241/_framework/aspnetcore-browser-refresh.js - -
+2023-08-24 10:07:37.007 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5241/_vs/browserLink - -
+2023-08-24 10:07:37.012 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5241/_framework/aspnetcore-browser-refresh.js - - - 200 11994 application/javascript;+charset=utf-8 6.8462ms
+2023-08-24 10:07:37.053 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5241/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 45.3596ms
+2023-08-24 10:07:39.751 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5241/Issues/New - -
+2023-08-24 10:07:39.757 +03:00 [INF] Executing endpoint '/Issues/New'
+2023-08-24 10:07:39.781 +03:00 [INF] Route matched with {page = "/Issues/New"}. Executing page /Issues/New
+2023-08-24 10:07:39.792 +03:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2023-08-24 10:07:39.792 +03:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2023-08-24 10:07:39.841 +03:00 [INF] Executed page /Issues/New in 59.2076ms
+2023-08-24 10:07:39.843 +03:00 [INF] Executed endpoint '/Issues/New'
+2023-08-24 10:07:39.847 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5241/Issues/New - - - 200 - text/html;+charset=utf-8 96.6822ms
+2023-08-24 10:07:39.858 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5241/_framework/aspnetcore-browser-refresh.js - -
+2023-08-24 10:07:39.858 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5241/_vs/browserLink - -
+2023-08-24 10:07:39.858 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5241/_framework/aspnetcore-browser-refresh.js - - - 200 11994 application/javascript;+charset=utf-8 0.2972ms
+2023-08-24 10:07:39.870 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5241/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 12.5399ms
+2023-08-24 10:07:45.258 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5241/Issues/New application/x-www-form-urlencoded 261
+2023-08-24 10:07:45.262 +03:00 [INF] Executing endpoint '/Issues/New'
+2023-08-24 10:07:45.262 +03:00 [INF] Route matched with {page = "/Issues/New"}. Executing page /Issues/New
+2023-08-24 10:07:45.288 +03:00 [INF] Executing handler method IssueTracker.Pages.Issues.NewModel.OnPost - ModelState is "Valid"
+2023-08-24 10:07:45.292 +03:00 [INF] Entity Framework Core 6.0.1 initialized 'IssueDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.1' with options: None
+2023-08-24 10:07:45.410 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = DateTime), @p2='?' (Size = 6), @p3='?' (DbType = Int32), @p4='?' (DbType = Int32), @p5='?' (Size = 6)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Issues" ("Completed", "Created", "Description", "IssueType", "Priority", "Title")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+SELECT "Id"
+FROM "Issues"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2023-08-24 10:07:45.453 +03:00 [INF] Executed handler method OnPost, returned result Microsoft.AspNetCore.Mvc.RedirectToPageResult.
+2023-08-24 10:07:45.455 +03:00 [INF] Executing RedirectToPageResult, redirecting to ../Index.
+2023-08-24 10:07:45.455 +03:00 [INF] Executed page /Issues/New in 192.293ms
+2023-08-24 10:07:45.455 +03:00 [INF] Executed endpoint '/Issues/New'
+2023-08-24 10:07:45.455 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5241/Issues/New application/x-www-form-urlencoded 261 - 302 0 - 197.1306ms
+2023-08-24 10:07:45.459 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5241/ - -
+2023-08-24 10:07:45.460 +03:00 [INF] Executing endpoint '/Index'
+2023-08-24 10:07:45.460 +03:00 [INF] Route matched with {page = "/Index"}. Executing page /Index
+2023-08-24 10:07:45.460 +03:00 [INF] Executing handler method IssueTracker.Pages.IndexModel.OnGet - ModelState is "Valid"
+2023-08-24 10:07:45.481 +03:00 [INF] Entity Framework Core 6.0.1 initialized 'IssueDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.1' with options: None
+2023-08-24 10:07:45.484 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "i"."Id", "i"."Completed", "i"."Created", "i"."Description", "i"."IssueType", "i"."Priority", "i"."Title"
+FROM "Issues" AS "i"
+WHERE "i"."Completed" IS NULL
+ORDER BY "i"."Created" DESC
+2023-08-24 10:07:45.484 +03:00 [INF] Executed handler method OnGet, returned result .
+2023-08-24 10:07:45.484 +03:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2023-08-24 10:07:45.484 +03:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2023-08-24 10:07:45.489 +03:00 [INF] Executed page /Index in 29.0265ms
+2023-08-24 10:07:45.489 +03:00 [INF] Executed endpoint '/Index'
+2023-08-24 10:07:45.490 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5241/ - - - 200 - text/html;+charset=utf-8 31.2797ms
+2023-08-24 10:07:45.499 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5241/_vs/browserLink - -
+2023-08-24 10:07:45.499 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5241/_framework/aspnetcore-browser-refresh.js - -
+2023-08-24 10:07:45.499 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5241/_framework/aspnetcore-browser-refresh.js - - - 200 11994 application/javascript;+charset=utf-8 0.2761ms
+2023-08-24 10:07:45.518 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5241/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 19.6751ms
+2023-08-24 10:08:30.588 +03:00 [INF] User profile is available. Using 'C:\Users\burak\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-08-24 10:08:30.724 +03:00 [INF] Now listening on: http://localhost:5241
+2023-08-24 10:08:30.727 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-24 10:08:30.727 +03:00 [INF] Hosting environment: Development
+2023-08-24 10:08:30.728 +03:00 [INF] Content root path: \\Mac\Home\Desktop\C#\IssueTracker\IssueTracker\
+2023-08-24 10:08:31.745 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5241/ - -
+2023-08-24 10:08:31.831 +03:00 [INF] Executing endpoint '/Index'
+2023-08-24 10:08:31.875 +03:00 [INF] Route matched with {page = "/Index"}. Executing page /Index
+2023-08-24 10:08:32.027 +03:00 [INF] Executing handler method IssueTracker.Pages.IndexModel.OnGet - ModelState is "Valid"
+2023-08-24 10:08:32.518 +03:00 [INF] Entity Framework Core 6.0.1 initialized 'IssueDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.1' with options: None
+2023-08-24 10:08:32.985 +03:00 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "i"."Id", "i"."Completed", "i"."Created", "i"."Description", "i"."IssueType", "i"."Priority", "i"."Title"
+FROM "Issues" AS "i"
+WHERE "i"."Completed" IS NULL
+ORDER BY "i"."Created" DESC
+2023-08-24 10:08:33.058 +03:00 [INF] Executed handler method OnGet, returned result .
+2023-08-24 10:08:33.062 +03:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2023-08-24 10:08:33.062 +03:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2023-08-24 10:08:33.334 +03:00 [INF] Executed page /Index in 1454.8081ms
+2023-08-24 10:08:33.335 +03:00 [INF] Executed endpoint '/Index'
+2023-08-24 10:08:33.361 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5241/ - - - 200 - text/html;+charset=utf-8 1621.3618ms
+2023-08-24 10:08:33.402 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5241/_framework/aspnetcore-browser-refresh.js - -
+2023-08-24 10:08:33.409 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5241/_framework/aspnetcore-browser-refresh.js - - - 200 11994 application/javascript;+charset=utf-8 6.3009ms
+2023-08-24 10:08:33.466 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5241/_vs/browserLink - -
+2023-08-24 10:08:33.524 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5241/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 58.4105ms
+2023-08-24 10:08:34.427 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5241/Issues/Detail/15 - -
+2023-08-24 10:08:34.433 +03:00 [INF] Executing endpoint '/Issues/Detail'
+2023-08-24 10:08:34.448 +03:00 [INF] Route matched with {page = "/Issues/Detail"}. Executing page /Issues/Detail
+2023-08-24 10:08:34.460 +03:00 [INF] Executing handler method IssueTracker.Pages.Issues.DetailModel.OnGet - ModelState is "Valid"
+2023-08-24 10:08:34.462 +03:00 [INF] Entity Framework Core 6.0.1 initialized 'IssueDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.1' with options: None
+2023-08-24 10:08:34.492 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__p_0='?' (DbType = UInt32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "i"."Id", "i"."Completed", "i"."Created", "i"."Description", "i"."IssueType", "i"."Priority", "i"."Title"
+FROM "Issues" AS "i"
+WHERE "i"."Id" = @__p_0
+LIMIT 1
+2023-08-24 10:08:34.493 +03:00 [INF] Executed handler method OnGet, returned result .
+2023-08-24 10:08:34.493 +03:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2023-08-24 10:08:34.493 +03:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2023-08-24 10:08:34.503 +03:00 [INF] Executed page /Issues/Detail in 55.1518ms
+2023-08-24 10:08:34.503 +03:00 [INF] Executed endpoint '/Issues/Detail'
+2023-08-24 10:08:34.505 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5241/Issues/Detail/15 - - - 200 - text/html;+charset=utf-8 77.0288ms
+2023-08-24 10:08:34.514 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5241/_framework/aspnetcore-browser-refresh.js - -
+2023-08-24 10:08:34.514 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5241/_vs/browserLink - -
+2023-08-24 10:08:34.517 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5241/_framework/aspnetcore-browser-refresh.js - - - 200 11994 application/javascript;+charset=utf-8 3.5784ms
+2023-08-24 10:08:34.527 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5241/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 12.0873ms
+2023-08-24 10:08:35.412 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5241/Issues/Detail/15?handler=resolve&id=15 - -
+2023-08-24 10:08:35.414 +03:00 [INF] Executing endpoint '/Issues/Detail'
+2023-08-24 10:08:35.414 +03:00 [INF] Route matched with {page = "/Issues/Detail"}. Executing page /Issues/Detail
+2023-08-24 10:08:35.421 +03:00 [INF] Executing handler method IssueTracker.Pages.Issues.DetailModel.OnGetResolve - ModelState is "Valid"
+2023-08-24 10:08:35.448 +03:00 [INF] Entity Framework Core 6.0.1 initialized 'IssueDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.1' with options: None
+2023-08-24 10:08:35.457 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = UInt32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "i"."Id", "i"."Completed", "i"."Created", "i"."Description", "i"."IssueType", "i"."Priority", "i"."Title"
+FROM "Issues" AS "i"
+WHERE "i"."Id" = @__id_0
+LIMIT 2
+2023-08-24 10:08:35.529 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@p6='?' (DbType = UInt32), @p0='?' (DbType = DateTime), @p1='?' (DbType = DateTime), @p2='?' (Size = 6), @p3='?' (DbType = Int32), @p4='?' (DbType = Int32), @p5='?' (Size = 6)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Issues" SET "Completed" = @p0, "Created" = @p1, "Description" = @p2, "IssueType" = @p3, "Priority" = @p4, "Title" = @p5
+WHERE "Id" = @p6;
+SELECT changes();
+2023-08-24 10:08:35.547 +03:00 [INF] Executed handler method OnGetResolve, returned result .
+2023-08-24 10:08:35.547 +03:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2023-08-24 10:08:35.547 +03:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2023-08-24 10:08:35.548 +03:00 [INF] Executed page /Issues/Detail in 133.3925ms
+2023-08-24 10:08:35.548 +03:00 [INF] Executed endpoint '/Issues/Detail'
+2023-08-24 10:08:35.548 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5241/Issues/Detail/15?handler=resolve&id=15 - - - 200 - text/html;+charset=utf-8 135.8305ms
+2023-08-24 10:08:36.790 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5241/ - -
+2023-08-24 10:08:36.790 +03:00 [INF] Executing endpoint '/Index'
+2023-08-24 10:08:36.790 +03:00 [INF] Route matched with {page = "/Index"}. Executing page /Index
+2023-08-24 10:08:36.791 +03:00 [INF] Executing handler method IssueTracker.Pages.IndexModel.OnGet - ModelState is "Valid"
+2023-08-24 10:08:36.791 +03:00 [INF] Entity Framework Core 6.0.1 initialized 'IssueDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.1' with options: None
+2023-08-24 10:08:36.797 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "i"."Id", "i"."Completed", "i"."Created", "i"."Description", "i"."IssueType", "i"."Priority", "i"."Title"
+FROM "Issues" AS "i"
+WHERE "i"."Completed" IS NULL
+ORDER BY "i"."Created" DESC
+2023-08-24 10:08:36.798 +03:00 [INF] Executed handler method OnGet, returned result .
+2023-08-24 10:08:36.798 +03:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2023-08-24 10:08:36.798 +03:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2023-08-24 10:08:36.802 +03:00 [INF] Executed page /Index in 11.3551ms
+2023-08-24 10:08:36.802 +03:00 [INF] Executed endpoint '/Index'
+2023-08-24 10:08:36.803 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5241/ - - - 200 - text/html;+charset=utf-8 13.6887ms
+2023-08-24 10:08:36.810 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5241/_framework/aspnetcore-browser-refresh.js - -
+2023-08-24 10:08:36.810 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5241/_vs/browserLink - -
+2023-08-24 10:08:36.814 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5241/_framework/aspnetcore-browser-refresh.js - - - 200 11994 application/javascript;+charset=utf-8 1.8280ms
+2023-08-24 10:08:36.829 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5241/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 17.4019ms
+2023-08-24 10:13:34.187 +03:00 [INF] User profile is available. Using 'C:\Users\burak\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-08-24 10:13:34.333 +03:00 [INF] Now listening on: http://localhost:5241
+2023-08-24 10:13:34.337 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-24 10:13:34.338 +03:00 [INF] Hosting environment: Development
+2023-08-24 10:13:34.338 +03:00 [INF] Content root path: \\Mac\Home\Desktop\C#\IssueTracker\IssueTracker\
+2023-08-24 10:13:35.345 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5241/ - -
+2023-08-24 10:13:35.414 +03:00 [INF] Executing endpoint '/Index'
+2023-08-24 10:13:35.469 +03:00 [INF] Route matched with {page = "/Index"}. Executing page /Index
+2023-08-24 10:13:35.630 +03:00 [INF] Executing handler method IssueTracker.Pages.IndexModel.OnGet - ModelState is "Valid"
+2023-08-24 10:13:36.031 +03:00 [INF] Entity Framework Core 6.0.1 initialized 'IssueDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.1' with options: None
+2023-08-24 10:13:36.430 +03:00 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "i"."Id", "i"."Completed", "i"."Created", "i"."Description", "i"."IssueType", "i"."Priority", "i"."Title"
+FROM "Issues" AS "i"
+WHERE "i"."Completed" IS NULL
+ORDER BY "i"."Created" DESC
+2023-08-24 10:13:36.491 +03:00 [INF] Executed handler method OnGet, returned result .
+2023-08-24 10:13:36.494 +03:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2023-08-24 10:13:36.494 +03:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2023-08-24 10:13:36.708 +03:00 [INF] Executed page /Index in 1234.203ms
+2023-08-24 10:13:36.710 +03:00 [INF] Executed endpoint '/Index'
+2023-08-24 10:13:36.741 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5241/_framework/aspnetcore-browser-refresh.js - -
+2023-08-24 10:13:36.752 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5241/_vs/browserLink - -
+2023-08-24 10:13:36.755 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5241/_framework/aspnetcore-browser-refresh.js - - - 200 11994 application/javascript;+charset=utf-8 12.4411ms
+2023-08-24 10:13:36.763 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5241/ - - - 200 - text/html;+charset=utf-8 1427.2288ms
+2023-08-24 10:13:36.817 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5241/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 64.0903ms
+2023-08-24 10:13:38.204 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5241/Issues/New - -
+2023-08-24 10:13:38.207 +03:00 [INF] Executing endpoint '/Issues/New'
+2023-08-24 10:13:38.224 +03:00 [INF] Route matched with {page = "/Issues/New"}. Executing page /Issues/New
+2023-08-24 10:13:38.235 +03:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2023-08-24 10:13:38.235 +03:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2023-08-24 10:13:38.290 +03:00 [INF] Executed page /Issues/New in 65.426ms
+2023-08-24 10:13:38.290 +03:00 [INF] Executed endpoint '/Issues/New'
+2023-08-24 10:13:38.292 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5241/Issues/New - - - 200 - text/html;+charset=utf-8 88.6107ms
+2023-08-24 10:13:38.301 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5241/_framework/aspnetcore-browser-refresh.js - -
+2023-08-24 10:13:38.301 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5241/_vs/browserLink - -
+2023-08-24 10:13:38.301 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5241/_framework/aspnetcore-browser-refresh.js - - - 200 11994 application/javascript;+charset=utf-8 0.3752ms
+2023-08-24 10:13:38.308 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5241/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 7.6346ms
+2023-08-24 10:13:50.083 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5241/Issues/New application/x-www-form-urlencoded 259
+2023-08-24 10:13:50.085 +03:00 [INF] Executing endpoint '/Issues/New'
+2023-08-24 10:13:50.085 +03:00 [INF] Route matched with {page = "/Issues/New"}. Executing page /Issues/New
+2023-08-24 10:13:50.111 +03:00 [INF] Executing handler method IssueTracker.Pages.Issues.NewModel.OnPost - ModelState is "Valid"
+2023-08-24 10:13:50.116 +03:00 [INF] Entity Framework Core 6.0.1 initialized 'IssueDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.1' with options: None
+2023-08-24 10:13:50.224 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = DateTime), @p2='?' (Size = 6), @p3='?' (DbType = Int32), @p4='?' (DbType = Int32), @p5='?' (Size = 4)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Issues" ("Completed", "Created", "Description", "IssueType", "Priority", "Title")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+SELECT "Id"
+FROM "Issues"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2023-08-24 10:13:50.269 +03:00 [INF] Executed handler method OnPost, returned result Microsoft.AspNetCore.Mvc.RedirectToPageResult.
+2023-08-24 10:13:50.270 +03:00 [INF] Executing RedirectToPageResult, redirecting to ../Index.
+2023-08-24 10:13:50.270 +03:00 [INF] Executed page /Issues/New in 184.7979ms
+2023-08-24 10:13:50.270 +03:00 [INF] Executed endpoint '/Issues/New'
+2023-08-24 10:13:50.270 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5241/Issues/New application/x-www-form-urlencoded 259 - 302 0 - 187.6517ms
+2023-08-24 10:13:50.273 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5241/ - -
+2023-08-24 10:13:50.273 +03:00 [INF] Executing endpoint '/Index'
+2023-08-24 10:13:50.273 +03:00 [INF] Route matched with {page = "/Index"}. Executing page /Index
+2023-08-24 10:13:50.273 +03:00 [INF] Executing handler method IssueTracker.Pages.IndexModel.OnGet - ModelState is "Valid"
+2023-08-24 10:13:50.296 +03:00 [INF] Entity Framework Core 6.0.1 initialized 'IssueDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.1' with options: None
+2023-08-24 10:13:50.298 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "i"."Id", "i"."Completed", "i"."Created", "i"."Description", "i"."IssueType", "i"."Priority", "i"."Title"
+FROM "Issues" AS "i"
+WHERE "i"."Completed" IS NULL
+ORDER BY "i"."Created" DESC
+2023-08-24 10:13:50.299 +03:00 [INF] Executed handler method OnGet, returned result .
+2023-08-24 10:13:50.299 +03:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2023-08-24 10:13:50.299 +03:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2023-08-24 10:13:50.303 +03:00 [INF] Executed page /Index in 29.3217ms
+2023-08-24 10:13:50.303 +03:00 [INF] Executed endpoint '/Index'
+2023-08-24 10:13:50.304 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5241/ - - - 200 - text/html;+charset=utf-8 31.1533ms
+2023-08-24 10:13:50.311 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5241/_vs/browserLink - -
+2023-08-24 10:13:50.311 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5241/_framework/aspnetcore-browser-refresh.js - -
+2023-08-24 10:13:50.311 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5241/_framework/aspnetcore-browser-refresh.js - - - 200 11994 application/javascript;+charset=utf-8 1.4880ms
+2023-08-24 10:13:50.337 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5241/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 27.5583ms
+2023-08-24 10:22:37.370 +03:00 [INF] User profile is available. Using 'C:\Users\burak\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-08-24 10:22:37.499 +03:00 [INF] Now listening on: http://localhost:5241
+2023-08-24 10:22:37.505 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-24 10:22:37.505 +03:00 [INF] Hosting environment: Development
+2023-08-24 10:22:37.505 +03:00 [INF] Content root path: \\Mac\Home\Desktop\C#\IssueTracker\IssueTracker\
+2023-08-24 10:22:38.410 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5241/ - -
+2023-08-24 10:22:38.502 +03:00 [INF] Executing endpoint '/Index'
+2023-08-24 10:22:38.558 +03:00 [INF] Route matched with {page = "/Index"}. Executing page /Index
+2023-08-24 10:22:38.687 +03:00 [INF] Executing handler method IssueTracker.Pages.IndexModel.OnGet - ModelState is "Valid"
+2023-08-24 10:22:39.088 +03:00 [INF] Entity Framework Core 6.0.1 initialized 'IssueDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.1' with options: None
+2023-08-24 10:22:39.489 +03:00 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "i"."Id", "i"."Completed", "i"."Created", "i"."Description", "i"."IssueType", "i"."Priority", "i"."Title"
+FROM "Issues" AS "i"
+WHERE "i"."Completed" IS NULL
+ORDER BY "i"."Created" DESC
+2023-08-24 10:22:39.559 +03:00 [INF] Executed handler method OnGet, returned result .
+2023-08-24 10:22:39.562 +03:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2023-08-24 10:22:39.562 +03:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2023-08-24 10:22:39.780 +03:00 [INF] Executed page /Index in 1218.3029ms
+2023-08-24 10:22:39.781 +03:00 [INF] Executed endpoint '/Index'
+2023-08-24 10:22:39.805 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5241/_framework/aspnetcore-browser-refresh.js - -
+2023-08-24 10:22:39.812 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5241/_vs/browserLink - -
+2023-08-24 10:22:39.813 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5241/_framework/aspnetcore-browser-refresh.js - - - 200 11994 application/javascript;+charset=utf-8 6.5258ms
+2023-08-24 10:22:39.859 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5241/ - - - 200 - text/html;+charset=utf-8 1452.1574ms
+2023-08-24 10:22:39.878 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5241/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 66.1699ms
+2023-08-24 11:47:41.781 +03:00 [INF] User profile is available. Using 'C:\Users\burak\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-08-24 11:47:41.959 +03:00 [INF] Now listening on: http://localhost:5241
+2023-08-24 11:47:41.962 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-24 11:47:41.963 +03:00 [INF] Hosting environment: Development
+2023-08-24 11:47:41.963 +03:00 [INF] Content root path: \\Mac\Home\Desktop\C#\IssueTracker\IssueTracker\
+2023-08-24 11:47:43.170 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5241/ - -
+2023-08-24 11:47:43.290 +03:00 [INF] Executing endpoint '/Index'
+2023-08-24 11:47:43.358 +03:00 [INF] Route matched with {page = "/Index"}. Executing page /Index
+2023-08-24 11:47:43.522 +03:00 [INF] Executing handler method IssueTracker.Pages.IndexModel.OnGet - ModelState is "Valid"
+2023-08-24 11:47:44.009 +03:00 [INF] Entity Framework Core 6.0.1 initialized 'IssueDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.1' with options: None
+2023-08-24 11:47:44.463 +03:00 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "i"."Id", "i"."Completed", "i"."Created", "i"."Description", "i"."IssueType", "i"."Priority", "i"."Title"
+FROM "Issues" AS "i"
+WHERE "i"."Completed" IS NULL
+ORDER BY "i"."Created" DESC
+2023-08-24 11:47:44.540 +03:00 [INF] Executed handler method OnGet, returned result .
+2023-08-24 11:47:44.543 +03:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2023-08-24 11:47:44.543 +03:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2023-08-24 11:47:44.779 +03:00 [INF] Executed page /Index in 1417.4751ms
+2023-08-24 11:47:44.780 +03:00 [INF] Executed endpoint '/Index'
+2023-08-24 11:47:44.807 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5241/_framework/aspnetcore-browser-refresh.js - -
+2023-08-24 11:47:44.828 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5241/ - - - 200 - text/html;+charset=utf-8 1668.4827ms
+2023-08-24 11:47:44.830 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5241/_framework/aspnetcore-browser-refresh.js - - - 200 11994 application/javascript;+charset=utf-8 22.9065ms
+2023-08-24 11:47:44.844 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5241/_vs/browserLink - -
+2023-08-24 11:47:44.905 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5241/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 61.4572ms
+2023-08-24 11:47:47.294 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5241/Issues/Detail/16 - -
+2023-08-24 11:47:47.302 +03:00 [INF] Executing endpoint '/Issues/Detail'
+2023-08-24 11:47:47.318 +03:00 [INF] Route matched with {page = "/Issues/Detail"}. Executing page /Issues/Detail
+2023-08-24 11:47:47.331 +03:00 [INF] Executing handler method IssueTracker.Pages.Issues.DetailModel.OnGet - ModelState is "Valid"
+2023-08-24 11:47:47.333 +03:00 [INF] Entity Framework Core 6.0.1 initialized 'IssueDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.1' with options: None
+2023-08-24 11:47:47.365 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__p_0='?' (DbType = UInt32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "i"."Id", "i"."Completed", "i"."Created", "i"."Description", "i"."IssueType", "i"."Priority", "i"."Title"
+FROM "Issues" AS "i"
+WHERE "i"."Id" = @__p_0
+LIMIT 1
+2023-08-24 11:47:47.366 +03:00 [INF] Executed handler method OnGet, returned result .
+2023-08-24 11:47:47.366 +03:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2023-08-24 11:47:47.366 +03:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2023-08-24 11:47:47.376 +03:00 [INF] Executed page /Issues/Detail in 57.5896ms
+2023-08-24 11:47:47.376 +03:00 [INF] Executed endpoint '/Issues/Detail'
+2023-08-24 11:47:47.377 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5241/Issues/Detail/16 - - - 200 - text/html;+charset=utf-8 83.4255ms
+2023-08-24 11:47:47.385 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5241/_vs/browserLink - -
+2023-08-24 11:47:47.385 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5241/_framework/aspnetcore-browser-refresh.js - -
+2023-08-24 11:47:47.385 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5241/_framework/aspnetcore-browser-refresh.js - - - 200 11994 application/javascript;+charset=utf-8 0.3262ms
+2023-08-24 11:47:47.426 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5241/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 41.1964ms
+2023-08-24 11:47:49.085 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5241/Issues/Detail/16?handler=resolve&id=16 - -
+2023-08-24 11:47:49.088 +03:00 [INF] Executing endpoint '/Issues/Detail'
+2023-08-24 11:47:49.089 +03:00 [INF] Route matched with {page = "/Issues/Detail"}. Executing page /Issues/Detail
+2023-08-24 11:47:49.100 +03:00 [INF] Executing handler method IssueTracker.Pages.Issues.DetailModel.OnGetResolve - ModelState is "Valid"
+2023-08-24 11:47:49.138 +03:00 [INF] Entity Framework Core 6.0.1 initialized 'IssueDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.1' with options: None
+2023-08-24 11:47:49.148 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = UInt32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "i"."Id", "i"."Completed", "i"."Created", "i"."Description", "i"."IssueType", "i"."Priority", "i"."Title"
+FROM "Issues" AS "i"
+WHERE "i"."Id" = @__id_0
+LIMIT 2
+2023-08-24 11:47:49.221 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@p6='?' (DbType = UInt32), @p0='?' (DbType = DateTime), @p1='?' (DbType = DateTime), @p2='?' (Size = 6), @p3='?' (DbType = Int32), @p4='?' (DbType = Int32), @p5='?' (Size = 4)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Issues" SET "Completed" = @p0, "Created" = @p1, "Description" = @p2, "IssueType" = @p3, "Priority" = @p4, "Title" = @p5
+WHERE "Id" = @p6;
+SELECT changes();
+2023-08-24 11:47:49.237 +03:00 [INF] Executed handler method OnGetResolve, returned result .
+2023-08-24 11:47:49.237 +03:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2023-08-24 11:47:49.237 +03:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2023-08-24 11:47:49.238 +03:00 [INF] Executed page /Issues/Detail in 148.6354ms
+2023-08-24 11:47:49.238 +03:00 [INF] Executed endpoint '/Issues/Detail'
+2023-08-24 11:47:49.238 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5241/Issues/Detail/16?handler=resolve&id=16 - - - 200 - text/html;+charset=utf-8 153.3126ms
+2023-08-24 11:47:49.764 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5241/ - -
+2023-08-24 11:47:49.774 +03:00 [INF] Executing endpoint '/Index'
+2023-08-24 11:47:49.775 +03:00 [INF] Route matched with {page = "/Index"}. Executing page /Index
+2023-08-24 11:47:49.776 +03:00 [INF] Executing handler method IssueTracker.Pages.IndexModel.OnGet - ModelState is "Valid"
+2023-08-24 11:47:49.777 +03:00 [INF] Entity Framework Core 6.0.1 initialized 'IssueDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.1' with options: None
+2023-08-24 11:47:49.784 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "i"."Id", "i"."Completed", "i"."Created", "i"."Description", "i"."IssueType", "i"."Priority", "i"."Title"
+FROM "Issues" AS "i"
+WHERE "i"."Completed" IS NULL
+ORDER BY "i"."Created" DESC
+2023-08-24 11:47:49.784 +03:00 [INF] Executed handler method OnGet, returned result .
+2023-08-24 11:47:49.784 +03:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2023-08-24 11:47:49.785 +03:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2023-08-24 11:47:49.790 +03:00 [INF] Executed page /Index in 14.1486ms
+2023-08-24 11:47:49.790 +03:00 [INF] Executed endpoint '/Index'
+2023-08-24 11:47:49.791 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5241/ - - - 200 - text/html;+charset=utf-8 27.1771ms
+2023-08-24 11:47:49.801 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5241/_vs/browserLink - -
+2023-08-24 11:47:49.801 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5241/_framework/aspnetcore-browser-refresh.js - -
+2023-08-24 11:47:49.801 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5241/_framework/aspnetcore-browser-refresh.js - - - 200 11994 application/javascript;+charset=utf-8 0.2022ms
+2023-08-24 11:47:49.823 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5241/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 22.5145ms
+2023-08-24 11:47:51.648 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5241/Issues/New - -
+2023-08-24 11:47:51.651 +03:00 [INF] Executing endpoint '/Issues/New'
+2023-08-24 11:47:51.658 +03:00 [INF] Route matched with {page = "/Issues/New"}. Executing page /Issues/New
+2023-08-24 11:47:51.659 +03:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2023-08-24 11:47:51.659 +03:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2023-08-24 11:47:51.706 +03:00 [INF] Executed page /Issues/New in 48.1502ms
+2023-08-24 11:47:51.707 +03:00 [INF] Executed endpoint '/Issues/New'
+2023-08-24 11:47:51.709 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5241/Issues/New - - - 200 - text/html;+charset=utf-8 60.4805ms
+2023-08-24 11:47:51.716 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5241/_framework/aspnetcore-browser-refresh.js - -
+2023-08-24 11:47:51.716 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5241/_vs/browserLink - -
+2023-08-24 11:47:51.717 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5241/_framework/aspnetcore-browser-refresh.js - - - 200 11994 application/javascript;+charset=utf-8 1.4237ms
+2023-08-24 11:47:51.738 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5241/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 21.9976ms
+2023-08-24 11:48:00.838 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5241/Issues/New application/x-www-form-urlencoded 264
+2023-08-24 11:48:00.840 +03:00 [INF] Executing endpoint '/Issues/New'
+2023-08-24 11:48:00.840 +03:00 [INF] Route matched with {page = "/Issues/New"}. Executing page /Issues/New
+2023-08-24 11:48:00.867 +03:00 [INF] Executing handler method IssueTracker.Pages.Issues.NewModel.OnPost - ModelState is "Valid"
+2023-08-24 11:48:00.871 +03:00 [INF] Entity Framework Core 6.0.1 initialized 'IssueDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.1' with options: None
+2023-08-24 11:48:00.909 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = DateTime), @p2='?' (Size = 6), @p3='?' (DbType = Int32), @p4='?' (DbType = Int32), @p5='?' (Size = 9)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Issues" ("Completed", "Created", "Description", "IssueType", "Priority", "Title")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+SELECT "Id"
+FROM "Issues"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2023-08-24 11:48:00.930 +03:00 [INF] Executed handler method OnPost, returned result Microsoft.AspNetCore.Mvc.RedirectToPageResult.
+2023-08-24 11:48:00.931 +03:00 [INF] Executing RedirectToPageResult, redirecting to ../Index.
+2023-08-24 11:48:00.931 +03:00 [INF] Executed page /Issues/New in 91.1415ms
+2023-08-24 11:48:00.931 +03:00 [INF] Executed endpoint '/Issues/New'
+2023-08-24 11:48:00.932 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5241/Issues/New application/x-www-form-urlencoded 264 - 302 0 - 93.1926ms
+2023-08-24 11:48:00.935 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5241/ - -
+2023-08-24 11:48:00.935 +03:00 [INF] Executing endpoint '/Index'
+2023-08-24 11:48:00.935 +03:00 [INF] Route matched with {page = "/Index"}. Executing page /Index
+2023-08-24 11:48:00.936 +03:00 [INF] Executing handler method IssueTracker.Pages.IndexModel.OnGet - ModelState is "Valid"
+2023-08-24 11:48:00.936 +03:00 [INF] Entity Framework Core 6.0.1 initialized 'IssueDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.1' with options: None
+2023-08-24 11:48:00.936 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "i"."Id", "i"."Completed", "i"."Created", "i"."Description", "i"."IssueType", "i"."Priority", "i"."Title"
+FROM "Issues" AS "i"
+WHERE "i"."Completed" IS NULL
+ORDER BY "i"."Created" DESC
+2023-08-24 11:48:00.937 +03:00 [INF] Executed handler method OnGet, returned result .
+2023-08-24 11:48:00.937 +03:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2023-08-24 11:48:00.937 +03:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2023-08-24 11:48:00.941 +03:00 [INF] Executed page /Index in 5.3096ms
+2023-08-24 11:48:00.941 +03:00 [INF] Executed endpoint '/Index'
+2023-08-24 11:48:00.942 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5241/ - - - 200 - text/html;+charset=utf-8 7.3007ms
+2023-08-24 11:48:00.948 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5241/_vs/browserLink - -
+2023-08-24 11:48:00.948 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5241/_framework/aspnetcore-browser-refresh.js - -
+2023-08-24 11:48:00.948 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5241/_framework/aspnetcore-browser-refresh.js - - - 200 11994 application/javascript;+charset=utf-8 0.1785ms
+2023-08-24 11:48:01.006 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5241/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 45.8887ms
